@@ -1,0 +1,38 @@
+{
+    "kitinfo": {
+        "name": "KIT GUI for Examples",
+        "version": "V1.0",
+        "description": "A collection of examples for GCI usages and effects",
+        "slogan":"",
+        "developer": "",
+        "contact": "",
+        "homepage": "",
+        "license": "",
+        "standard": ""
+    },
+    "gkipars": {
+        "gcictor": "../GCI_ctor.py",
+        "interpreter":"python",
+        "miniui":"",
+        "icon": "",
+        "logo": "",
+        "splash": "embedded",
+        "help": "",
+        "fadeio":"True",
+        "transparency":"235",
+        "sptime": "5",
+        "spmaxsz": "[480,240]",
+        "fontsz": "12",
+        "logomaxsz": "[240,120]",
+        "infowidth": "400",
+        "descsz": "[380,60]"
+    },
+    "cuilist": [
+    "GCI_ctor_GCI.json",
+    "GKI_ctor_GCI.json",
+    "demo/demo_GCI.json",
+    "copy/ubuntu_copy_GCI.json",
+    "copy/windows_copy_GCI.json",
+    "fastqc/fastqc_GCI.json"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "appinfo": {
+        "name": "GKI constructor",
+        "version": "VisualCMD V1.0 (vivid shell)",
+        "description": "GKI constructor: a GUI constructor for a collection of CUI-APPs (KIT)",
+        "slogan":"To make CMD vivid!",
+        "developer": "fountao",
+        "contact": "",
+        "homepage": "https://github.com/fountao/cmdwiz/tree/main/visualcmd",
+        "license": "GNU General Public License V3.0",
+        "standard": ""
+    },
+    "gcipars": {
+        "cuiapp": "../GCI_ctor.py",
+        "checkcui":"True",
+        "interpreter":"pythonw",
+        "miniui":"",
+        "atqctrl": "False",
+        "cmdctrl": "True",
+        "icon": "",
+        "logo": "logo.png",
+        "splash": "",
+        "help": "",
+        "wait": "",
+        "fadeio":"True",
+        "transparency":"240",
+        "sptime": "5",
+        "spmaxsz": "[480,240]",
+        "fontsz": "12",
+        "logomaxsz": "[240,120]",
+        "parasz": "[640,320]",
+        "infowidth": "400",
+        "descsz": "[380,60]",
+        "titwrap": "180",
+        "hpwrap": "240",
+        "cmdsz": "[640,64]",
+        "waitsz": "[480,96]"
+    },
+    "cuipars": {
+        "si_1": {
+            "title": "GKI config file",
+            "type": "file",
+            "style": "single",
+            "label": "gkicfg",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "GKI config file (*.json)|*_GKI.json|All files (*.*)|*.*",
+            "default": "",
+            "help": "KIT configuration file (absolute path)"
+        }
+    }
+}

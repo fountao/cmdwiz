@@ -1,0 +1,65 @@
+{
+    "appinfo": {
+        "name": "GCI constructor",
+        "version": "VisualCMD V1.0 (vivid shell)",
+        "description": "GCI constructor: a GUI constructor for a CUI application or system command",
+        "slogan":"To make CMD vivid!",
+        "developer": "fountao",
+        "newinfo":"",
+        "contact": "",
+        "homepage": "https://github.com/fountao/cmdwiz/tree/main/visualcmd",
+        "license": "GNU General Public License V3.0",
+        "standard": ""
+    },
+    "gcipars": {
+        "cuiapp": "../GCI_ctor.py",
+        "checkcui":"True",
+        "interpreter":"pythonw",
+        "miniui":"",
+        "atqctrl": "False",
+        "cmdctrl": "True",
+        "icon": "",
+        "logo": "logo.png",
+        "splash": "embedded",
+        "newpar":"",
+        "help": "",
+        "wait": "",
+        "fadeio":"True",
+        "transparency":"240",
+        "sptime": "5",
+        "spmaxsz": "[480,240]",
+        "fontsz": "12",
+        "logomaxsz": "[240,120]",
+        "parasz": "[640,320]",
+        "infowidth": "400",
+        "descsz": "[380,60]",
+        "titwrap": "180",
+        "hpwrap": "240",
+        "cmdsz": "[640,64]",
+        "waitsz": "[480,96]"
+    },
+    "cuipars": {
+        "si_1": {
+            "title": "GCI config file",
+            "type": "file",
+            "style": "single",
+            "label": "gcicfg",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "GCI config file (*.json)|*_GCI.json|All files (*.*)|*.*",
+            "default": "",
+            "help": "GCI configuration file (absolute path)"
+        },
+        "si_2": {
+            "title": "JSON arguments",
+            "type": "file",
+            "style": "single",
+            "label": "-j",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "GCI config file (*.json)|*.json|All files (*.*)|*.*",
+            "default": "",
+            "help": "JSON arguments for a CMD task"
+        }
+    }
+}

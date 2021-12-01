@@ -1,0 +1,74 @@
+{
+    "appinfo": {
+        "name": "Ubuntu Copy",
+        "version": "",
+        "description": "Copy a file or folder, based on Ubuntu Command: cp",
+        "slogan":"",
+        "developer": "",
+        "contact": "",
+        "homepage": "",
+        "license": "",
+        "standard": ""
+    },
+    "gcipars": {
+        "cuiapp": "cp",
+        "checkcui":"False",
+        "interpreter":"",
+        "miniui":"True",
+        "atqctrl": "False",
+        "cmdctrl": "True",
+        "icon": "",
+        "logo": "logo.png",
+        "splash": "",
+        "help": "",
+        "wait": "",
+        "fadeio":"True",
+        "transparency":"240",
+        "sptime": "5",
+        "spmaxsz": "[480,240]",
+        "fontsz": "12",
+        "logomaxsz": "[240,120]",
+        "parasz": "[640,320]",
+        "infowidth": "400",
+        "descsz": "[380,60]",
+        "titwrap": "180",
+        "hpwrap": "240",
+        "cmdsz": "[640,64]",
+        "waitsz": "[480,96]"
+    },
+    "cuipars": {
+        "si_1": {
+            "title": "Source file",
+            "type": "file",
+            "style": "single",
+            "label": "sfi",
+            "requirement": "False",
+            "exclusive": "True",
+            "limitation": "All files (*.*)|*.*",
+            "default": "",
+            "help": "Source file"
+        },
+        "si_2": {
+            "title": "Source folder",
+            "type": "folder",
+            "style": "single",
+            "label": "sfo",
+            "requirement": "False",
+            "exclusive": "True",
+            "limitation": "",
+            "default": "",
+            "help": "Source folder"
+        },
+        "si_3": {
+            "title": "Target path",
+            "type": "folder",
+            "style": "single",
+            "label": "tpath",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "",
+            "default": "",
+            "help": "Target path"
+        }
+    }
+}

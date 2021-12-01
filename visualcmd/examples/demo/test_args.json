@@ -1,0 +1,22 @@
+{
+    "cui": "demo.py",
+    "position": {
+        "pos1": "dsfsd",
+        "pos2": "50",
+        "pos3": "-0.5"
+    },
+    "flag": {
+        "-b": "",
+        "-p": "123456",
+        "-f": "",
+        "--files": "Q:\\omicskey_dev_pre_2021\\github_pros\\visualcmd\\current\\demo\\logo.gif|Q:\\omicskey_dev_pre_2021\\github_pros\\visualcmd\\current\\demo\\cui.par",
+        "-e": "",
+        "--dirs": "",
+        "-g": "DNA",
+        "-h": "",
+        "-x": "False",
+        "--rg": "(0,100]",
+        "-c": "#D03429",
+        "--cs": "#D03429|#800080"
+    }
+}

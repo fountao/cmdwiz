@@ -1,0 +1,129 @@
+{
+    "appinfo": {
+        "name": "FastQC GUI",
+        "version": "",
+        "description": "GUI for FastQC, a tool for high throughput sequence QC analysis",
+        "slogan":"",
+        "developer": "",
+        "contact": "",
+        "homepage": "",
+        "license": "",
+        "standard": ""
+    },
+    "gcipars": {
+        "cuiapp": "fastqc",
+        "checkcui":"",
+        "interpreter":"",
+        "miniui":"",
+        "atqctrl": "False",
+        "cmdctrl": "True",
+        "icon": "",
+        "logo": "logo.png",
+        "splash": "",
+        "help": "",
+        "wait": "",
+        "fadeio":"True",
+        "transparency":"240",
+        "sptime": "5",
+        "spmaxsz": "[480,240]",
+        "fontsz": "12",
+        "logomaxsz": "[240,120]",
+        "parasz": "[640,320]",
+        "infowidth": "400",
+        "descsz": "[380,60]",
+        "titwrap": "180",
+        "hpwrap": "240",
+        "cmdsz": "[640,64]",
+        "waitsz": "[480,96]"
+    },
+    "cuipars": {
+        "si_1": {
+            "title": "FastQ files",
+            "type": "file",
+            "style": "multiple",
+            "label": "seqfis",
+            "requirement": "True",
+            "exclusive": "False",
+            "limitation": "FastQ file (*.fastq)|*.txt|All files (*.*)|*.*",
+            "default": "",
+            "help": "FastQ files, support gzip compression"
+        },
+        "si_2": {
+            "title": "Output dir",
+            "type": "folder",
+            "style": "single",
+            "label": "-o",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "",
+            "default": "",
+            "help": "Output dir, or the results files will be created in the same dir as input"
+        },
+        "si_3": {
+            "title": "Extract ",
+            "type": "check",
+            "style": "",
+            "label": "--extract",
+            "requirement": "False",
+            "exclusive": "True",
+            "limitation": "",
+            "default": "true",
+            "help": "Decompress zipped result files"
+        },
+        "si_4": {
+            "title": "No Extract ",
+            "type": "check",
+            "style": "",
+            "label": "--noextract",
+            "requirement": "False",
+            "exclusive": "True",
+            "limitation": "",
+            "default": "false",
+            "help": "Do not decompress zipped result files"
+        },
+        "si_5": {
+            "title": "Specified format",
+            "type": "select",
+            "style": "single",
+            "label": "-f",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "bam|sam|bam_mapped|sam_mapped|fastq",
+            "default": "",
+            "help": "Bypasses the normal sequence file format detection and forces the  program  to  use the specified format"
+        },
+        "si_6": {
+            "title": "Threads",
+            "type": "int",
+            "style": "",
+            "label": "-t",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "[1,128]",
+            "default": "6",
+            "help": "Specifies  the  number of files which can be processed simultaneously"
+        },
+        "si_7": {
+            "title": "Kmers",
+            "type": "int",
+            "style": "",
+            "label": "-k",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "[2,10]",
+            "default": "5",
+            "help": "Specifies the length of Kmer to look for in the Kmer content module"
+        },
+        "si_8": {
+            "title": "JAVA binary",
+            "type": "file",
+            "style": "single",
+            "label": "-j",
+            "requirement": "False",
+            "exclusive": "False",
+            "limitation": "All files (*.*)|*.*",
+            "default": "",
+            "help": "Provides  the full path to the java binary you want to use to launch fastqc"
+        }
+    }
+}

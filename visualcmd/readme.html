@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>VisualCMD readme</title>
+<style type="text/css">
+.pycode {
+	color: #0F0;
+}
+.bold {
+	font-weight: bold;
+}
+.pydir {
+	color: #6CF;
+}
+.pycode2 {
+	color: #FC0;
+}
+</style>
+</head>
+
+<body>
+<table width="90%" border="0" align="center" cellpadding="10" cellspacing="0">
+  <tr>
+    <td align="center" valign="middle"><h1><img src="resources/images/logo.png" alt="LOGO" /><br />
+      VisualCMD: a python implementation of the graphical command-line interface</h1>
+      <hr></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+      <ul>
+        <li>
+          <h3>What does VisualCMD do?</h3>
+    VisualCMD provides a solution to automatically generate a GUI for:<br />
+    <strong>(1). </strong>a collection of multiple CUI applications; <br />
+    <strong>(2).</strong> a CUI application (with arguments); <br />
+    <strong>(3).</strong> a system-level CMD (with arguments); <br />
+    WITHOUT any change of the existing applications;<br />
+        ONLY requires a JSON-based configuration file.</li>
+        <li>
+          <h3>Highlighted features</h3>
+    Core GUI constructors are designed as single-files (with default images embedded), and can be used as standalone tools; <br />
+    Defines and supports multiple input widgets (including basic string, int, float, range, file, folder and colour);<br />
+    Auto formating and validating inputs (such as date, time, url and string length);<br />
+    More input types and validations can be customized via regular-expression patterns;<br />
+    Supports customized splash, icon, logo and waiting images;<br />
+    Supports argument with multiple values;<br />
+    Supports exclusive arguments;<br />
+    Running of CMDs via multiple modes: realtime (displaying output), background (displaying waiting image) and unattended (non-interactive);<br />
+    CMD and arguments can be saved and loaded; <br />
+    Supports multiple operating systems;<br />
+        </li>
+      <li>
+        <h3>Installation</h3>
+          <p><strong>(1) . Required environments:</strong></p>
+          <p>Python 3.x, with pip </p>
+          <p class="bold">(2). Install wxPython for GUI supports</p>
+         </h4>Recommended version: 4.x<br>
+         For  Windows:
+          <table width="75%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td bgcolor="#333333" class="pycode">&gt;&gt;&gt; pip install -U wxPython</td>
+            </tr>
+          </table>
+          <p>For Ubuntu 20.04:</p>
+          <table width="75%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td bgcolor="#333333" class="pycode"><p>&gt;&gt;&gt; pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04      wxPython</p>
+              <p class="pycode2">#for libsdl supports, if needed</p>
+              <p class="pycode2">&gt;&gt;&gt; sudo apt-get install libsdl2-2.0<br />
+              &gt;&gt;&gt; sudo apt-get install libsdl2-dev</p></td>
+            </tr>
+          </table>
+          <p>*For other Linux distributions, please find the correct versions from: <a href="https://extras.wxpython.org/wxPython4/extras/linux/">https://extras.wxpython.org/wxPython4/extras/linux/</a></p>
+          <p>See: <a href="https://www.wxpython.org/pages/downloads/">https://www.wxpython.org/pages/downloads/</a></p>
+        </li>
+        <li>
+          <h3><span class="bold">Development and testing environments</span></h3>
+          <p>(1). VisualCMD was developed and tested under Windows OS:</p>
+          <p>Windows 7 Ultimate, 64bit; Python 3.8.10; wxPython 4.1.1</p>
+          <p>*Note: there may be &quot;unsupported locale setting&quot; issue under Windows due to the compatibility of wxPython. However, this issue does not affect the overall functionalities.</p>
+          <p>GUI snapshot for Windows:</p>
+          <table width="75%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>The main entrance (GUI_loader):<br />
+<img src="resources/snapshots/windows/w1.png" /></td>
+            </tr>
+            <tr>
+              <td>Demo KIT-GUI for the examples:<br />
+              <img src="resources/snapshots/windows/w2.png" /></td>
+            </tr>
+            <tr>
+              <td>Demo APP-GUI for the full-featured demo:<br />
+<img src="resources/snapshots/windows/w3.png" /></td>
+            </tr>
+          </table>
+          <p>(2).  SeqWIz was aslo tested under Ubuntu OS:</p>
+          <p>ubuntu-20.04.2.0-desktop-amd64; Python 3.8.10;  wxPython 4.1.1</p>
+          <p>*Note: there may be &quot;Gtk-WARNING&quot; issue under Ubuntu due to the compatibility of wxPython. However, this issue does not affect the overall functionalities.</p>
+          <p>GUI snapshot for Ubuntu:</p>
+          <table width="75%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>The main entrance (GUI_loader):<br />
+<img src="resources/snapshots/ubuntu/u1.png" /></td>
+            </tr>
+            <tr>
+              <td>Demo KIT-GUI for the examples:<br />
+              <img src="resources/snapshots/ubuntu/u2.png" /></td>
+            </tr>
+            <tr>
+              <td>Demo APP-GUI for the full-featured demo:<br />
+<img src="resources/snapshots/ubuntu/u3.png" /></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+        </li>
+        <li>
+          <h3>Usage</h3>
+    (1). Prepare customized images (splash, icon, logo, wait), if needed;<br />
+    (2). Create a configuration file (JSON based) for the GUI;<br />
+    *There are two types configuration, as shown in the examples: *_GKI.json for a KIT, and *_GCI.json for a CUI-APP or system CMD.<br />
+    (3). Use the GUI_loader to directly launch the GUI shell or create a standalone / shortcut launcher;<br />
+    (4). The image files, JSON configuration file and the standalone launcher can also be distributed in your project as a GUI supporting; 
+        </li>
+      <li>
+        <h3>Current version</h3>
+          VisualCMD V1.0<br />
+          Code name: vivid shell
+        </li>
+      <li>
+        <h3>License</h3>
+          <p>This project follows the GNU General Public License (version: 3.0).</p>
+          <p>See: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">https://www.gnu.org/licenses/gpl-3.0.en.html</a></p>
+        </li>
+      </ul>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
